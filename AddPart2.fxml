@@ -1,0 +1,44 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matt.joslen.project.ViewController.AddPart2Controller">
+   <children>
+      <Label layoutX="44.0" layoutY="33.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="79.0" text="ID" />
+      <Label layoutX="110.0" layoutY="113.0" text="Name" />
+      <Label layoutX="110.0" layoutY="148.0" text="Inv" />
+      <Label layoutX="110.0" layoutY="180.0" text="Price" />
+      <Label layoutX="110.0" layoutY="217.0" text="Max" />
+      <Label layoutX="110.0" layoutY="251.0" text="Machine ID" />
+      <Label layoutX="300.0" layoutY="217.0" text="Min" />
+      <Button fx:id="addPartSaveButton" layoutX="268.0" layoutY="296.0" mnemonicParsing="false" onAction="#AddPartSaveButtonHandler" prefHeight="25.0" prefWidth="59.0" text="Save" />
+      <Button fx:id="addPartCancelButton" layoutX="359.0" layoutY="296.0" mnemonicParsing="false" onAction="#AddPartCancelButtonHandler" prefHeight="25.0" prefWidth="59.0" text="Cancel" />
+      <TextField fx:id="partIDTextField" layoutX="210.0" layoutY="75.0" />
+      <TextField fx:id="partNameTextField" layoutX="210.0" layoutY="109.0" />
+      <TextField fx:id="partInvTextField" layoutX="210.0" layoutY="144.0" />
+      <TextField fx:id="partPriceTextField" layoutX="210.0" layoutY="176.0" />
+      <TextField fx:id="partMaxTextField" layoutX="210.0" layoutY="213.0" prefHeight="25.0" prefWidth="74.0" />
+      <TextField fx:id="partMachineIDTextField" layoutX="210.0" layoutY="247.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="partMinTextField" layoutX="334.0" layoutY="213.0" prefHeight="25.0" prefWidth="74.0" />
+      <RadioButton fx:id="inHouseButton" accessibleRole="RADIO_MENU_ITEM" layoutX="167.0" layoutY="38.0" mnemonicParsing="false" onAction="#InHouseButtonHandler" selected="true" text="   In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="partLocation" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="outsourcedButton" accessibleRole="RADIO_MENU_ITEM" layoutX="284.0" layoutY="38.0" mnemonicParsing="false" onAction="#outsourcedButtonHandler" text="   Outsourced" toggleGroup="$partLocation">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></RadioButton>
+   </children>
+</AnchorPane>
