@@ -1,2 +1,4 @@
 # Inventory Management System
-Features an inventory system with a functional GUI in Java FX that adds, modifies, and deletes parts as well as products that can be associated with the parts. Also includes search functionality within the visible parts and products tables.
+This project features an inventory system with search functionality that adds, modifies, and deletes parts as well as products that can be associated with the parts.
+
+Tech stack: Java, JavaFX, FXML
